@@ -1,0 +1,38 @@
+#nav {display: block; margin: 0; padding: 0; position: relative;top:0px;left:0px;width:100%;}
+#nav li { display: block; list-style: none; margin: 0; padding: 0; float: left; position: relative;}
+#nav a { display: block; }
+#nav ul { display: none; position: absolute; left: 0; margin: 0; padding: 0; }
+* html #nav ul { line-height: 0; } /* IE6 "fix" */
+#nav ul a { zoom: 1; } /* IE6/7 fix */
+#nav ul li { float: none; }
+#nav ul ul { top: 0; }
+/*#nav ul { width: 140px; }*/
+#nav { height: 85px; background-image: url("bg_menu.png");}
+#nav *:hover { background-color: none; }
+#nav li a { 
+	/*background-image: url("_specific/agenceMap/menu_inactive.jpg");*/
+	/*width: 115px;*/
+	height: 85px;
+	color: white; 
+	font-size: 12px; 
+	text-decoration: none;
+	text-align: center;
+	/*padding-top: 10px;*/
+}
+#nav li.hover a.menu { background-image: url("_specific/agenceMap/menu_hover.jpg"); background-repeat: no-repeat;}
+#nav li.active_title a.menu { background-image: url("_specific/agenceMap/menu_active.jpg"); }
+#nav li ul li a {text-align:left;width: 250px;height: 15px;background:none;color:#422311;}
+#nav li ul li a.hover { color: #be2476;}
+#nav ul { 
+	top: 80px; 
+	left: 8px;
+	padding: 5px;
+	background:none;
+	background-color: #f28d01;
+	border-left: 1px solid #422311;
+	border-bottom: 1px solid #422311;
+	border-right: 1px solid #422311;}
+#nav ul a { background:none; opacity: 0.9; filter: alpha(opacity=90); }
+
+/* #nav ul a { border-bottom: none; } - I also needed this for IE6/7 */
+

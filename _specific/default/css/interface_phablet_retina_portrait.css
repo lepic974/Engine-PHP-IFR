@@ -1,0 +1,658 @@
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 668px) and (max-width: 991px) and (orientation: portrait),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 668px) and (max-width: 991px) and (orientation: portrait),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 668px) and (max-width: 991px) and (orientation: portrait),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 668px) and (max-width: 991px) and (orientation: portrait),
+only screen and (                min-resolution: 192dpi) and (min-width: 668px) and (max-width: 991px) and (orientation: portrait),
+only screen and (                min-resolution: 2dppx)  and (min-width: 668px) and (max-width: 991px) and (orientation: portrait) {
+    /** Home (Accueil) **/
+    .section .layer {
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        height: calc(100vh - 61px);
+        left: 0;
+        top: 0;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+    .accroche_accueil{
+        width: 450px;
+        font-size: 35px;
+        color: #ffffff;
+        margin:auto;
+        text-align:left;
+        letter-spacing: 5px;
+        line-height: 35px;
+        margin-top: calc(50vh - 100px);
+    }
+
+    .logo_peron_home{
+        position: fixed;
+        width: 180px;
+        height: 35px;
+        top: 120px;
+        z-index: 9999;
+        left: calc(50vw - 90px);
+        background-image: url(pic/logo_peron_180_35.png);
+        background-size: contain;
+        background-position: center center;
+    }
+
+    #logo_peron_menu{
+        position: fixed;
+        width: 30px;
+        height: 17px;
+        top: 70px;
+        z-index: 9999;
+        left: calc(50vw - 15px);
+        cursor: pointer;
+        background-image: url(pic/menu_peron_phone.png);
+        background-size: contain;
+        background-position: center center;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .adresse_peron{
+        position: fixed;
+        width: 350px;
+        height: 40px;
+        top: calc(100vh - 60px);
+        z-index: 9999;
+        left: 30px;
+        font-size: 13px;
+        color: #ffffff;
+        font-family: netto;
+        white-space: nowrap;
+    }
+
+    .adresse_peron a b{
+        font-family: netto;
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    .adresse_peron a{
+        color: #ffffff;
+    }
+
+    .social_peron{ display:none;}
+    .social_peron a {display:none;}
+    .social a b {display:none; }
+    .langue_telephone{
+        display:block;
+        position: fixed;
+        z-index: 9999;
+        font-size: 18px;
+        letter-spacing: 2px;
+        top: 30px;
+        left: 30px;
+        width: 80px;
+    }
+    .langue_telephone a{
+        color: #ffffff;
+    }
+    .langue_telephone a b{
+        font-family: netto_bold;
+    }
+    .social_telephone{
+        display:block;
+        position: fixed;
+        z-index: 9999;
+        top: 30px;
+        right: 30px;
+        width:
+    }
+
+
+    .nav_verticale_accueil{
+        position: absolute;
+        z-index: 4;
+        width: 25px;
+        height: 70px;
+        top: calc(100vh - 165px);
+        left: calc(50vw - 12px);
+        text-align:center;
+    }
+    .chiffre_page_navigation{
+        font-size: 20px;
+    }
+    .nav_verticale{
+        width: 25px;
+        height: 41px;
+        margin: auto;
+        text-align:center;
+        position: relative;
+        top: calc(50vh - 285px);
+    }
+    .nav_verticale_full_text{
+        width: 25px;
+        height: 100px;
+        margin: auto;
+        text-align:center;
+    }
+    .nav_verticale_full_text_video{
+        width: 25px;
+        height: 100px;
+        margin: auto;
+        text-align:center;
+    }
+
+    /** Gestion Cadre Texte **/
+    .cadre_text{
+        width: 400px;
+        height: calc(100vh - 61px);
+        background-color: none;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        margin:auto;
+        padding-top: calc(50vh - 165px);
+        z-index:4;
+    }
+
+    .cadre_text_with_video{
+        width: 400px;
+        height: calc(100vh - 250px);
+        top:-100vh ;
+        background-color: none;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        margin:auto;
+        position:relative;
+        padding-top: calc(50vh - 165px);
+        z-index:4;
+    }
+
+    .zone_contenu_text{
+        float: left;
+        width:266px;
+        height: 310px;
+        background-color:rgba(255, 255, 255, 0.85);
+    }
+
+    .zone_contenu_text_no_img{
+        float: left;
+        width:400px;
+        height: 310px;
+        background-color:rgba(255, 255, 255, 0.85);
+    }
+
+    .zone_contenu_image{
+        float:left;
+        width: 134px;
+        height: 310px;
+        background-size: cover;
+        background-position: center center;
+        opacity: 10%;
+
+    }
+
+    .zone_num_page{
+        font-family: netto_bold;
+        color: #000000;
+        font-size: 36px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 15px;
+        text-align:right;
+    }
+
+    .titre_page{
+        color: #000000;
+        font-size: 18px;
+        text-align:left;
+        margin-left: 40px;
+        margin-right: 40px;
+        letter-spacing: 2px;
+        margin-top: 0px;
+    }
+
+    .contenu_page{
+        color: #000000;
+        font-size: 12px;
+        text-align:left;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 14px;
+        text-align: justify;
+        line-height:14px;
+        overflow: hidden;
+        height: 190px;
+        letter-spacing: 1.4px;
+    }
+
+    /** Template Full Texte **/
+    .cadre_full_text{
+        width: 550px;
+        height: 100vh;
+        margin:auto;
+        background-color: none;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+    .cadre_full_text_with_video{
+        width: 550px;
+        height: 100vh;
+        top:-100vh ;
+        margin:auto;
+        background-color: none;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        position:relative;
+        z-index:4;
+    }
+
+    .titre_page_full_text{
+        color: #ffffff;
+        font-size: 17px;
+        text-align:left;
+        letter-spacing: 2px;
+    }
+
+    .zone_contenu_full_text{
+        width: 550px;
+        height: calc(100vh - 370px);
+        margin-top: 230px;
+    }
+
+    .contenu_page_full_text h2{
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .contenu_page_full_text div{
+        width: 550px;
+        letter-spacing: 1.2px;
+    }
+    .contenu_page_full_text div div{
+        width: 70px;
+        text-align: right;
+        float:right;
+        letter-spacing: 1.2px;
+    }
+
+    .contenu_page_full_text{
+        color: #ffffff;
+        font-size: 12px;
+        text-align:left;
+        border-top: 1px solid #575860;
+        border-bottom: 1px solid #575860;
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: justify;
+        line-height:14px;
+    }
+
+    /** Gestion Affichage Video **/
+    .myVideo{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /*cover video background */
+        overflow: hidden;
+    }
+
+    /** Gestion Affichage Menu **/
+    #menu{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        z-index: 10001;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .zone_text_menu{
+        float: right;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 2, 16, 0.95);
+    }
+
+    .btn_close_menu {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        left: calc(50% - 15px);
+        z-index: 9999;
+        top: 40px;
+        cursor: pointer;
+        background-image: url(pic/close_reservation_telephone.png);
+        background-size: contain;
+        background-position: center center;
+        cursor: pointer;
+    }
+
+    .ligne_menu_first{
+        margin-left: calc((50vw - 100px));
+        margin-top: 220px;
+    }
+
+    .ligne_menu{
+        margin-left: calc((50vw - 100px));
+        margin-top: 30px;
+    }
+
+    .chiffre_section{
+        color: #ffffff;
+        font-size: 21px;
+    }
+
+    .chiffre_page{
+        color: #ffffff;
+        font-size: 9px;
+        margin-right: 50px;
+    }
+
+    .chiffre_page_up{
+        color: #ffffff;
+        font-size: 9px;
+        margin-right: 50px;
+        margin-left:5px;
+        vertical-align:super;
+    }
+
+    .desc_section a, .desc_section a:hover{
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+
+    .accroche_menu_vertical{display:none;}
+    .menu_nom{display:none;}
+    .menu_tel{display:none;}
+    .menu_adresse_1{display:none;}
+    .menu_adresse_2{display:none;}
+    .menu_gps{display:none; }
+    .menu_gps a{display:none;}
+    .menu_credit{display:none; }
+    .menu_credit span{display:none;}
+
+    .menu_adresse_1_tel{
+        display: block;
+        width: calc(100vw - 310px);
+        text-align:center;
+        margin: auto;
+        margin-top: 200px;
+        font-size: 15px;
+        letter-spacing: 2.5px;
+    }
+    .menu_adresse_1_tel a{
+        color: #ffffff;
+    }
+    .menu_gps_tel{
+        display: block;
+        width: calc(100vw - 310px);
+        text-align:center;
+        margin: auto;
+        font-size: 19.5px;
+        letter-spacing: 3px;
+    }
+    .menu_gps_tel a{
+        color: #ffffff;
+    }
+    .zone_tel_credit_tel{
+        display: block;
+        width: calc(100vw - 310px);
+        text-align:center;
+        margin: auto;
+    }
+    .menu_credit_tel{
+        display: inline;
+        float:left;
+        width: 48%;
+        text-align : center;
+        font-size: 9px;
+        letter-spacing: 2px;
+        line-height: 15px;
+        margin-left: 2px;
+
+    }
+    .menu_credit_tel span{
+        display: block;
+        background-color: #ffffff;
+        color: #000000;
+    }
+    .menu_tel_tel{
+        display:  inline;
+        float: right;
+        width: 48%;
+        font-size: 25px;
+        letter-spacing: 2px;
+        text-align: right;
+        margin-right: 5px;
+        margin-top: 2px;
+    }
+    .menu_tel_tel a {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    /** Formulaire de reservation **/
+    #form_reservation{
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10002;
+        background-color: rgba(0, 0, 0, 1);
+        background-image: url(pic/background_reservation.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .close_reservation{
+        position: fixed;
+        top: 40px;
+        left: calc(50% - 15px);
+        width: 20px;
+        height: 20px;
+        background-image: url(pic/close_reservation_telephone.png);
+        background-size: contain;
+        background-position: center center;
+        cursor: pointer;
+    }
+
+    .zone_info_reservation{
+        width: 450px;
+        height: 600px;
+        margin:auto;
+        margin-top: calc((100vh - 600px)/2);
+    }
+
+    .titre_reservation{
+        letter-spacing: 2.5px;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .text_input{
+        color: #ffffff;
+        font-size: 11px;
+    }
+
+    .hr_reservation{
+        height: 2px;
+        border-color: #3a3a43;
+    }
+
+    .zone_input_left{
+        width:48%;
+        font-size: 11px;
+        float:left;
+        margin-top: 8px;
+        letter-spacing: 2px;
+    }
+    .zone_input_left input, .zone_input_left select{
+        width:100%;
+        border: 1px solid #2c2d34;
+        background-color: rgba(0, 0, 0, 1);
+        font-size: 11px;
+        height: 25px;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+    .zone_input_right{
+        width:48%;
+        font-size: 11px;
+        float: right;
+        margin-top: 8px;
+        letter-spacing: 2px;
+    }
+    .zone_input_right input{
+        width:100%;
+        border: 1px solid #2c2d34;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-size: 11px;
+        height: 25px;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+    .zone_input_full{
+        width:100%;
+        font-size: 11px;
+        margin-top: 8px;
+        letter-spacing: 2px;
+    }
+    .zone_input_full input{
+        width:100%;
+        border: 1px solid #2c2d34;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-size: 11px;
+        height: 25px;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+    .zone_input_full textarea{
+        width:100%;
+        height: 65px;
+        border: 1px solid #2c2d34;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-size: 11px;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+    .zone_valid{
+        width: 48%;
+        float: right;
+        background-color: rgba(60, 61, 71, 1);
+        cursor: pointer;
+        text-align: center;
+        height: 25px;
+        line-height: 25px;
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+    .reservation_adresse{
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .reservation_gps_tel{
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .reservation_gps_tel a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .div_show_info_message{
+        position: absolute;
+        top:75px;
+        left: 50%;
+        width: 400px;
+        margin-left: -200px;
+        border-radius: 5px;
+
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d3f49), color-stop(100%, #4b4c4d) );
+        background-image: -webkit-linear-gradient(top, #3d3f49, #4b4c4d);
+        background-image: -moz-linear-gradient(top, #3d3f49, #4b4c4d);
+        background-image: -ms-linear-gradient(top, #3d3f49, #4b4c4d);
+        background-image: -o-linear-gradient(top, #3d3f49, #4b4c4d);
+        background-image: linear-gradient(top, #3d3f49, #4b4c4d);
+        -pie-background: linear-gradient(#3d3f49, #4b4c4d);
+
+        border: 1px solid #646464;
+        box-shadow: 0px 0px 10px #222222;
+        z-index: 9999;
+        padding: 15px;
+        text-align: center;
+        font-size: 11px;
+        letter-spacing: 2px;
+        display: none;
+    }
+    .close_show_info{
+        float: right;
+        width: 25px;
+        height: 29px;
+        margin-top:-20px;
+        margin-right:-20px;
+        background-image: url(pic/x.png);
+        cursor: pointer;
+    }
+
+    /** Fleche de navigation **/
+    .fp-controlArrow.fp-prev {
+        top: calc(50vh - 12px);
+        left: 30px;
+        border: none;
+        width: 19px;
+        height: 23px;
+        background: url(pic/prev_telephone.png) no-repeat;
+        cursor: pointer;
+    }
+    .fp-controlArrow.fp-next {
+        top: calc(50vh - 12px);
+        right: 30px;
+        border: none;
+        width: 19px;
+        height: 23px;
+        background: url(pic/next_telephone.png) no-repeat;
+        cursor: pointer;
+    }
+
+    /** Sommaire **/
+    ul.leaders {
+        max-width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+        list-style: none;
+    }
+    ul.leaders li{
+        margin-top: 0px;
+        letter-spacing: 1.3px;
+    }
+    ul.leaders li:before {
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content: " ";
+    }
+    ul.leaders span:first-child {
+        padding-right: 0.33em;
+        background: none;
+    }
+    ul.leaders span + span {
+        float: right;
+        padding-left: 0.33em;
+        background: none;
+    }
+}

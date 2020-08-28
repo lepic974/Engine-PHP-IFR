@@ -1,0 +1,616 @@
+html{
+    overflow-x: hidden;
+}
+#video_restaurant{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10005;
+    display:none;
+    background: none;
+    background-color: black;
+
+    /*position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10005;
+    display:none;
+    background-size: 100% 100%;
+    background-color: black;
+    background-position: center center;
+    background-size: contain;
+    object-fit: scale-down;
+    overflow: hidden;*/
+}
+
+#video_restaurant_contenu {
+    width: 100%;
+    height: 100%;
+
+    /*min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Make video to at least 100% wide and tall */
+}
+.section .layer {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.accroche_accueil{
+    width: 80%;
+    font-size: 25px;
+    color: #ffffff;
+    margin:auto;
+    text-align:left;
+    letter-spacing: 3px;
+    line-height: 25px;
+    margin-top: calc(50vh - 120px);
+}
+
+#logo_peron_menu{
+    position: fixed;
+    width: 118px;
+    height: 59px;
+    top: 0px;
+    z-index: 9999;
+    left: calc(50vw - 59px);
+    cursor: pointer;
+    background-image: url(pic/LePeron_entete_mobile.png);
+    background-size: contain;
+    background-position: center center;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.nav_verticale_accueil{display:none;}
+.chiffre_page_navigation{display:none;}
+.nav_verticale{display:none;}
+.nav_verticale_full_text{display:none;}
+.nav_verticale_full_text_video{display:none;}
+
+#home{
+    width: 100%;
+    height: 100vh;
+}
+
+.section_mobile{
+    width: 100%;
+    height: auto;
+}
+
+/** Template Full Text **/
+.cadre_full_text{
+    width: calc(100% - 20px);
+    /*height: calc(100vh - 155px);*/
+    margin:auto;
+    margin-top: 155px;
+    background-color: none;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.cadre_full_text_with_video{
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:30px;
+    margin:auto;
+    margin-top: -10px;
+    background-color: #ffffff;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    position:inherit;
+    z-index:4;
+    border: 1px solid #ffffff;
+    color: #000000;
+}
+
+.titre_page_full_text{
+    color: #ffffff;
+    font-size: 20px;
+    text-align:left;
+    letter-spacing: 2px;
+    margin-top: -41px;
+}
+
+.zone_contenu_full_text{
+    width: 100%;
+}
+
+.contenu_page_full_text h2{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.contenu_page_full_text{
+    color: #000000;
+    font-size: 15px;
+    text-align:left;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-align: justify;
+    line-height:17px;
+    border: none;
+    letter-spacing: 1.4px;
+}
+
+.carte_mobile{
+    margin-top: 40px;
+}
+
+ul.leaders {
+    max-width: 100%;
+    padding: 0;
+    overflow: hidden;
+    list-style: none}
+ul.leaders li{
+    margin-top: 10px;
+    letter-spacing: 1.4px;
+}
+ul.leaders li:after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white;
+    position: relative;
+    z-index: 1}
+
+
+
+
+
+
+
+/** Gestion Template par defaut **/
+.cadre_text_with_video{
+    width: 100%;
+    background-color: none;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    margin:auto;
+    z-index:4;
+}
+
+.zone_contenu_text{
+    height: auto !important;
+    width: 100%;
+    background-color:rgba(255, 255, 255, 1);
+}
+
+.zone_contenu_text_no_img{
+    width: 100%;
+    background-color:rgba(255, 255, 255, 1);
+}
+
+.zone_contenu_image{display: none;}
+
+.zone_num_page{
+    font-family: netto;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    text-align:left;
+    letter-spacing: 2px;
+    margin: auto;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -80px;
+}
+
+.titre_page{
+    color: #000000;
+    font-size: 20px;
+    text-align:left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+.contenu_page_mobile{
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    color: #000000;
+    font-size: 15px;
+    text-align:left;
+    margin-top: 10px;
+    text-align: justify;
+    line-height:17px;
+    padding-bottom: 30px;
+    letter-spacing: 1.5px;
+    line-height: 16px;
+}
+
+/** Gestion Affichage Menu **/
+#menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 10001;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.adresse_peron{
+    display: none;
+}
+
+.adresse_peron a b{
+    display: none;
+}
+
+.adresse_peron a{
+    display: none;
+}
+
+.social_peron{display: none;}
+.social_peron a {display: none;}
+.social a b {display: none;}
+
+.langue_telephone{
+    display:block;
+    position: fixed;
+    z-index: 9999;
+    font-size: 16px;
+    letter-spacing: 2px;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+}
+.langue_telephone a{
+    color: #ffffff;
+}
+.langue_telephone a b{
+    font-family: netto_bold;
+}
+.social_telephone{
+    display:block;
+    position: fixed;
+    z-index: 9999;
+    top: 20px;
+    right: 20px;
+    width:
+}
+
+.zone_text_menu{
+    float: right;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 2, 16, 0.95);
+}
+
+.btn_close_menu {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 15px);
+    z-index: 9999;
+    top: 80px;
+    cursor: pointer;
+    background-image: url(pic/close_reservation_telephone.png);
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.ligne_menu_first{
+    margin-left: calc((50vw - 100px));
+    margin-top: 150px;
+}
+
+.ligne_menu{
+    margin-left: calc((50vw - 100px));
+    margin-top: 10px;
+}
+
+.chiffre_section{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.chiffre_page{
+    color: #ffffff;
+    font-size: 9px;
+    margin-right: 50px;
+}
+
+.chiffre_page_up{
+    color: #ffffff;
+    font-size: 9px;
+    margin-right: 50px;
+    margin-left:5px;
+    vertical-align:super;
+}
+
+.desc_section a, .desc_section a:hover{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+
+.accroche_menu_vertical{display:none;}
+.menu_nom{display:none;}
+.menu_tel{display:none;}
+.menu_adresse_1{display:none;}
+.menu_adresse_2{display:none;}
+.menu_gps{display:none; }
+.menu_gps a{display:none;}
+.menu_credit{display:none; }
+.menu_credit span{display:none;}
+
+.menu_adresse_1_tel{
+    display: block;
+    width: calc(100% - 40px);
+    text-align:center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.menu_adresse_1_tel a{
+    color: #ffffff;
+}
+.menu_gps_tel{
+    display: block;
+    width: calc(100% - 40px);
+    text-align:center;
+    margin: auto;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+}
+.menu_gps_tel a{
+    color: #ffffff;
+}
+.zone_tel_credit_tel{
+    display: block;
+    width: calc(100% - 40px);
+    text-align:center;
+    margin: auto;
+}
+.menu_credit_tel{
+    display: inline;
+    text-align : center;
+    font-size: 8px;
+    letter-spacing: 1.3px;
+    line-height: 10px;
+}
+.menu_credit_tel span{
+    display: block;
+    color: #ffffff;
+}
+
+#zone_info_menu_mobile{
+    width: 100%;
+    position: fixed;
+    bottom: 80px;
+    left: 0px;
+}
+
+
+
+
+
+/** Formulaire de reservation **/
+#form_reservation{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height:100vh;
+    z-index: 10002;
+    background-color: rgba(0, 0, 0, 1);
+    background-image: url(pic/background_reservation.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.close_reservation{
+    position: fixed;
+    top: 20px;
+    left: calc(50% - 15px);
+    width: 20px;
+    height: 20px;
+    background-image: url(pic/close_reservation_telephone.png);
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.zone_info_reservation{
+    width: calc(100% - 40px);
+    height: calc(100vh - 100px);
+    margin:auto;
+    margin-top: 50px;
+}
+
+.titre_reservation{
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+}
+
+.text_input{
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.hr_reservation{
+    height: 2px;
+    border-color: #3a3a43;
+}
+
+.zone_input_left{
+    width:100%;
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+.zone_input_left input, .zone_input_left select{
+    width:100%;
+    border: 1px solid #2c2d34;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+.zone_input_right{
+    width:100%;
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+.zone_input_right input{
+    width:100%;
+    border: 1px solid #2c2d34;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+.zone_input_full{
+    width:100%;
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+.zone_input_full input{
+    width:100%;
+    border: 1px solid #2c2d34;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+.zone_input_full textarea{
+    width:100%;
+    height: 80px;
+    border: 1px solid #2c2d34;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+.zone_valid{
+    width: 48%;
+    float: right;
+    background-color: rgba(60, 61, 71, 1);
+    cursor: pointer;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.reservation_adresse{
+    display: none;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.reservation_gps_tel{
+    display: none;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.reservation_gps_tel a{
+    display: none;
+}
+.div_show_info_message{
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    width: 100%;
+    border-radius: 5px;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d3f49), color-stop(100%, #4b4c4d) );
+    background-image: -webkit-linear-gradient(top, #3d3f49, #4b4c4d);
+    background-image: -moz-linear-gradient(top, #3d3f49, #4b4c4d);
+    background-image: -ms-linear-gradient(top, #3d3f49, #4b4c4d);
+    background-image: -o-linear-gradient(top, #3d3f49, #4b4c4d);
+    background-image: linear-gradient(top, #3d3f49, #4b4c4d);
+    -pie-background: linear-gradient(#3d3f49, #4b4c4d);
+
+    border: 1px solid #646464;
+    box-shadow: 0px 0px 10px #222222;
+    z-index: 9999;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: none;
+}
+.close_show_info{
+    display: none;
+    float: right;
+    width: 25px;
+    height: 29px;
+    margin-top:-20px;
+    margin-right:-20px;
+    background-image: url(pic/x.png);
+    cursor: pointer;
+}
+
+/** Gestion Video **/
+.myVideo_mobile{
+    width: 100%;
+    height: 75vh;
+    object-fit: cover; /*cover video background */
+    overflow: hidden;
+}
+
+.myVideo_mobile_home{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /*cover video background */
+    overflow: hidden;
+}

@@ -1,0 +1,54 @@
+@media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait){
+    /** Version SD : iPad **/
+    .adresse_peron{
+        top: calc(100vh - 65px);
+    }
+    .social_peron{
+        top: calc(100vh - 75px);
+    }
+}
+
+@media (min-width: 668px) and (max-width: 991px) and (orientation: portrait) {
+    /** Version SD Portrait : iPad **/
+    .adresse_peron{
+        top: calc(100vh - 65px);
+    }
+    .social_peron{
+        top: calc(100vh - 75px);
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 992px) and (max-width: 1199px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 992px) and (max-width: 1199px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 992px) and (max-width: 1199px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 992px) and (max-width: 1199px),
+only screen and (                min-resolution: 192dpi) and (min-width: 992px) and (max-width: 1199px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 992px) and (max-width: 1199px) {
+    /** Version SD Retina : iPad Mini + **/
+    .adresse_peron{
+        top: calc(100vh - 95px);
+    }
+    .social_peron{
+        top: calc(100vh - 105px);
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 668px) and (max-width: 991px) and (orientation: portrait),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 668px) and (max-width: 991px) and (orientation: portrait),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 668px) and (max-width: 991px) and (orientation: portrait),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 668px) and (max-width: 991px) and (orientation: portrait),
+only screen and (                min-resolution: 192dpi) and (min-width: 668px) and (max-width: 991px) and (orientation: portrait),
+only screen and (                min-resolution: 2dppx)  and (min-width: 668px) and (max-width: 991px) and (orientation: portrait) {
+    /** Version SD Retina Portrait : iPad Mini + **/
+    .adresse_peron{
+        top: calc(100vh - 95px);
+    }
+    .social_peron{
+        top: calc(100vh - 105px);
+    }
+}
+
+
+

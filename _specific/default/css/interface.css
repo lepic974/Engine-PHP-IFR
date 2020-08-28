@@ -1,0 +1,73 @@
+@font-face { font-family: netto; src: url('netto.ttf'); }
+@font-face { font-family: netto_bold; src: url('netto_ot_bold.ttf'); }
+
+body {background-color: #000000;font-family: netto;font-size: 12px;margin: 0px !important;padding: 0px !important;border: 0;color: #ffffff;overflow-x: hidden;}
+body * {font-family: netto;}
+p{font-family: netto;font-size: 18px;}
+.img-responsive{ max-width: 100%; height: auto; display: block;}
+a:hover{text-decoration: none;}
+a:active{outline:none;}
+video::-webkit-media-controls {display:none !important;}
+
+#video_restaurant{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10005;
+    display:none;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover; /*cover video background */
+    overflow: hidden;
+}
+
+#video_restaurant_contenu {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Make video to at least 100% wide and tall */
+}
+
+.slide{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+
+
+@keyframes animation_play_video {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+@-webkit-keyframes animation_play_video {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+.btn_play_video{animation: animation_play_video 2s linear infinite;}
+
+/* On cache la partie social telephone par defaut   */
+.langue_telephone{display:none;}
+.social_telephone{display:none;}
+.menu_tel_tel{display:none;}
+.menu_adresse_1_tel{display:none;}
+.menu_adresse_2_tel{display:none;}
+.menu_gps_tel{display:none;}
+.menu_credit_tel{display:none;}
+.zone_tel_credit_tel{display:none;}
+
+

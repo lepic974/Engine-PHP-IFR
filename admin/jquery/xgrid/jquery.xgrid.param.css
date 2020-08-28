@@ -1,0 +1,33 @@
+.jqxGrid{
+}
+/* row faded background */
+.jqxGrid .faded{background-repeat:repeat-x;background-position:bottom;}
+.jqxGrid .faded_alt_0{background-image:url('altbgd0.png');}
+.jqxGrid .faded_alt_1{background-image:url('altbgd1.png');}
+.jqxGrid .faded_c_0{background-image:url('altbgd0.png');}
+.jqxGrid .faded_c_1{background-image:url('altbgd1.png');}
+.jqxGrid .faded_c_2{background-image:url('altbgd2.png');}
+.jqxGrid .faded_c_3{background-image:url('altbgd3.png');}
+.jqxGrid .faded_c_4{background-image:url('altbgd4.png');}
+.jqxGrid .faded_c_5{background-image:url('altbgd5.png');}
+.jqxGrid .faded_c_6{background-image:url('altbgd6.png');}
+.jqxGrid .faded_c_7{background-image:url('altbgd7.png');}
+.jqxGrid .faded_c_8{background-image:url('altbgd8.png');}
+.jqxGrid .faded_c_9{background-image:url('altbgd9.png');}
+.jqxGrid .faded_c_10{background-image:url('altbgd10.png');}
+.jqxGrid .faded_c_11{background-image:url('altbgd11.png');}
+.jqxGrid .faded_c_12{background-image:url('altbgd12.png');}
+.jqxGrid .faded_c_13{background-image:url('altbgd13.png');}
+.jqxGrid .faded_c_14{background-image:url('altbgd14.png');}
+.jqxGrid .faded_c_15{background-image:url('altbgd15.png');}
+
+.jqxGrid .cell{
+	width:20px;
+	height:20px;
+	border:2px solid #ccc;
+	-moz-border-radius:3px;
+}
+.jqxGrid .cell.active{
+	border:2px solid #333;
+}	
+

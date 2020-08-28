@@ -1,0 +1,14 @@
+Installation Engine_PHP_Fullstack
+
+1. Création de la BDD
+  -- > Créer la BDD sur le serveur SQL (utf8mb4 --> utf8mb4_general_ci)
+  -- > Executer le script install_bdd.sql (repertoire intall)
+  
+2. Copie des fichiers sur le Serveur (URL Rewriting enable)
+
+3. Droit d'accès lecture ecriture pour l'utilisateur www-data
+    --> repertoire cache/, admin/cache et pic/upload
+    
+4. Test 
+    -- > backoffice dispo à l'adresse /admin (login : admin, mdp : admin)
+    

@@ -1,0 +1,98 @@
+@font-face { font-family: futura_light; src: url('FuturaLT-Light.ttf'); }
+
+#nav {
+	display: block; 
+	margin: auto; 
+	padding: 0; 
+	position: relative;
+	top:0px;
+	left:0px;
+	width:730px;
+	text-align:center;
+}
+
+#nav li { 
+	display: block; 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	float: left; 
+	position: relative;
+}
+
+#nav a { 
+	display: block; 
+}
+
+#nav ul { 
+	display: none; 
+	position: absolute; 
+	left: 0; 
+	margin: 0; 
+	padding: 0; 
+}
+
+* html #nav ul { line-height: 0; } /* IE6 "fix" */
+
+#nav ul a { zoom: 1; } /* IE6/7 fix */
+
+#nav ul li { float: none; }
+
+#nav ul ul { top: 0; }
+
+#nav { height: 27px; }
+
+#nav *:hover { 
+	background-color: none; 
+	color: #777777; 
+}
+
+#nav li a { 
+	height: 27px;
+	color: #000000; 
+	font-size: 14px; 
+	text-decoration: none;
+	text-align: center;
+	padding-top: 5px;
+	padding-left: 13px;
+	margin-left: 18px;
+	font-family: futura_light;
+}
+
+#nav li a:hover { 
+	color: #c69c6d; 
+	text-decoration: none !important;
+}
+
+#nav li.hover a.menu { }
+
+#nav li.active_title a.menu { }
+
+#nav li ul li a {
+	text-align:left;
+	padding: 5px;
+	margin: 5px;
+	height: 15px;
+	background-color:#fff;
+	color:#000;
+	white-space: nowrap;
+	font-weight: normal;
+}
+
+#nav li ul li a.hover { 
+	color: #000;
+	background-color:#ccc;
+}
+
+#nav ul { 
+	top: 27px; 
+	left: 5px;
+	background:#fff;
+	z-index: 100;
+}
+
+#nav ul a { 
+	background:none; 
+	opacity: 0.9; 
+	filter: alpha(opacity=90); 
+}
